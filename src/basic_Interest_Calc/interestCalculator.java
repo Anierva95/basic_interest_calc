@@ -1,11 +1,17 @@
 package basic_Interest_Calc;
 
+import java.math.BigDecimal;
+
 public class interestCalculator {
-	String interest;
-	String principal;
+	BigDecimal interest;
+	BigDecimal principal;
 
 	interestCalculator(String principal, String interest) {
-		this.principal = principal;
-		this.interest = interest;
+		this.principal = new BigDecimal(principal);
+		this.interest = new BigDecimal(interest);
+	}
+
+	public void calcTotal(int years) {
+
 	}
 }
